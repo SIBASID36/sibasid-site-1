@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sibasid — Уличная мебель и бетонные изделия</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2c2c2c;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #0a7f3f;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      background-color: #222;
+      color: #bbb;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      max-width: 200px;
+      border-radius: 8px;
+    }
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .catalog-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .catalog-item img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .catalog-item h3 {
+      margin: 10px 0 5px;
+    }
+    .benefits, .steps, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .benefit, .step, .testimonial {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      flex: 1 1 200px;
+      max-width: 250px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 10px;
+      background-color: #0a7f3f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sibasid</h1>
+  <p>Производство уличной мебели, бетонных и каменных изделий</p>
+</header>
+
+<section>
+  <h2>Наш каталог</h2>
+  <div class="catalog">
+    <div class="catalog-item">
+      <img src="https://via.placeholder.com/300x200?text=Барбекю+" alt="BBQ">
+      <h3>Уличный барбекю</h3>
+      <p>Бетонный корпус, встроенный гриль, натуральные материалы.</p>
+    </div>
+    <div class="catalog-item">
+      <img src="https://via.placeholder.com/300x200?text=Стол" alt="Table">
+      <h3>Бетонный стол</h3>
+      <p>Индивидуальные размеры, полированный бетон, металлическое основание.</p>
+    </div>
+    <div class="catalog-item">
+      <img src="https://via.placeholder.com/300x200?text=Скамейка" alt="Bench">
+      <h3>Скамейка</h3>
+      <p>Комбинированная бетонно-деревянная конструкция, идеально для улицы.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Наши преимущества</h2>
+  <div class="benefits">
+    <div class="benefit">✅ Уникальный дизайн</div>
+    <div class="benefit">🛠 Ручное производство</div>
+    <div class="benefit">🌿 Натуральные материалы</div>
+    <div class="benefit">🇪🇪 Сделано в Эстонии</div>
+  </div>
+</section>
+
+<section>
+  <h2>Отзывы клиентов</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>«Заказали уличную кухню — всё сделали под нас, супер качество!»</p>
+      <strong>— Алексей, Тарту</strong>
+    </div>
+    <div class="testimonial">
+      <p>«Очень стильные и прочные изделия. Уже год на улице — как новые!»</p>
+      <strong>— Марина, Пярну</strong>
+    </div>
+    <div class="testimonial">
+      <p>«Сервис на уровне. Привезли, установили, всё по сроку!»</p>
+      <strong>— Иван, Нарва</strong>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Как мы работаем</h2>
+  <div class="steps">
+    <div class="step">1️⃣ Вы оставляете заявку</div>
+    <div class="step">2️⃣ Мы связываемся и уточняем детали</div>
+    <div class="step">3️⃣ Производим по вашему заказу</div>
+    <div class="step">4️⃣ Доставляем и устанавливаем</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Связаться с нами</h2>
+  <p>Email: info@sibasid.ee</p>
+  <p>Телефон: +372 5555 5555</p>
+  <p>Instagram: <a href="https://instagram.com/sibasid" target="_blank">@sibasid</a></p>
+
+  <form onsubmit="sendToTelegram(event)">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Ваш email" required>
+    <textarea name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+    <input type="text" name="captcha" placeholder="Сколько будет 6 × 7?" required>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sibasid OÜ. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
